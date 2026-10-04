@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Stock</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="static/dashboard.css">
+
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+
+    <h2>Add New Stock</h2>
+
+    <div class="form-box">
+
+        <form method="POST" action="#" onsubmit="return TradeSphereDemo.handleForm(event);">
+
+            <input
+            type="text"
+            name="symbol"
+            placeholder="📈 Stock Symbol"
+            class="form-control"
+            required>
+
+            <input
+            type="text"
+            name="company"
+            placeholder="🏢 Company Name"
+            class="form-control"
+            required>
+
+            <input
+            type="number"
+            step="0.01"
+            name="price"
+            placeholder="💰 Price"
+            class="form-control"
+            required>
+
+            <button type="submit" class="add-btn">
+
+                ➕ Add Stock
+
+            </button>
+
+            <a href="admin_stocks.html" class="back-btn">
+
+                ⬅ Back
+
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

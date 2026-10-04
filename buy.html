@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Buy Stocks</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="static/dashboard.css">
+
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+
+    <h2>📈 Buy Stocks</h2>
+
+    <input
+        type="text"
+        id="searchBox"
+        class="search-box"
+        placeholder="🔍 Search Stock by Symbol or Company">
+
+    <table class="table table-dark table-hover mt-4">
+
+        <thead>
+
+            <tr>
+
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="stockTable">
+
+        
+
+            <tr>
+
+                <td>RELIANCE</td>
+
+                <td>Reliance Industries</td>
+
+                <td class="price">
+
+                    ₹2945.5
+
+                </td>
+
+                <td>
+
+                    <a href="buy_stock.html" class="buy-btn">
+
+                        🛒 Buy
+
+                    </a>
+
+                </td>
+
+            </tr>
+
+        
+
+            <tr>
+
+                <td>TCS</td>
+
+                <td>Tata Consultancy Services</td>
+
+                <td class="price">
+
+                    ₹4120.75
+
+                </td>
+
+                <td>
+
+                    <a href="buy_stock.html" class="buy-btn">
+
+                        🛒 Buy
+
+                    </a>
+
+                </td>
+
+            </tr>
+
+        
+
+            <tr>
+
+                <td>INFY</td>
+
+                <td>Infosys</td>
+
+                <td class="price">
+
+                    ₹1510.2
+
+                </td>
+
+                <td>
+
+                    <a href="buy_stock.html" class="buy-btn">
+
+                        🛒 Buy
+
+                    </a>
+
+                </td>
+
+            </tr>
+
+        
+
+            <tr>
+
+                <td>HDFCBANK</td>
+
+                <td>HDFC Bank</td>
+
+                <td class="price">
+
+                    ₹1742.1
+
+                </td>
+
+                <td>
+
+                    <a href="buy_stock.html" class="buy-btn">
+
+                        🛒 Buy
+
+                    </a>
+
+                </td>
+
+            </tr>
+
+        
+
+        </tbody>
+
+    </table>
+
+    <a href="dashboard.html" class="back-btn">
+
+        ⬅ Back to Dashboard
+
+    </a>
+
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const input = document.getElementById("searchBox");
+
+    const table = document.getElementById("stockTable");
+
+    const rows = table.getElementsByTagName("tr");
+
+    input.addEventListener("keyup", function(){
+
+        const filter = input.value.toLowerCase();
+
+        for(let i=0;i<rows.length;i++){
+
+            const symbol = rows[i].cells[0].textContent.toLowerCase();
+
+            const company = rows[i].cells[1].textContent.toLowerCase();
+
+            if(symbol.includes(filter) || company.includes(filter)){
+
+                rows[i].style.display="";
+
+            }else{
+
+                rows[i].style.display="none";
+
+            }
+
+        }
+
+    });
+
+});
+
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>

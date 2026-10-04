@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#1f2428;
+    color:white;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:40px auto;
+}
+
+/* Heading */
+
+h2{
+    color:#ff2d55;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+/* Table Card */
+
+.table{
+    background:#252b31;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid rgba(255,45,85,.25);
+    box-shadow:0 0 25px rgba(255,45,85,.18);
+}
+
+/* Header */
+
+.table th{
+    background:#ff2d55;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:18px;
+}
+
+/* Body */
+
+.table td{
+    padding:18px;
+    text-align:center;
+    vertical-align:middle;
+    color:white;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#313940;
+}
+
+/* Quantity */
+
+.qty{
+    color:#00ff99;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Buy Price */
+
+.price{
+    color:#ffc107;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Sell Button */
+
+.sell-btn{
+
+    display:inline-block;
+
+    background:#ff2d55;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.sell-btn:hover{
+
+    background:#d90429;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(255,45,85,.5);
+
+}
+
+/* Back Button */
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#6c757d;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#ff2d55;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 15px rgba(255,45,85,.4);
+
+}
+
+/* Empty Row */
+
+.text-center{
+    color:#ccc;
+    padding:30px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+}
+
+h2{
+    font-size:30px;
+}
+
+.table th,
+.table td{
+    padding:10px;
+    font-size:14px;
+}
+
+.sell-btn,
+.back-btn{
+    padding:8px 16px;
+    font-size:14px;
+}
+
+}*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#1f2428;
+    color:white;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:40px auto;
+}
+
+/* Heading */
+
+h2{
+    color:#00c37a;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* Table */
+
+.table{
+    width:100%;
+    background:#252b31;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid rgba(0,195,122,.25);
+    box-shadow:0 0 25px rgba(0,195,122,.20);
+}
+
+/* Table Header */
+
+.table th{
+    background:#00c37a;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:17px;
+}
+
+/* Table Data */
+
+.table td{
+    padding:18px;
+    text-align:center;
+    vertical-align:middle;
+    color:white;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#313940;
+}
+
+/* Quantity */
+
+.qty{
+    color:#00ff99;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* Buy Price */
+
+.price{
+    color:#ffc107;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* Sell Button */
+
+.sell-btn{
+
+    display:inline-block;
+
+    background:#00c37a;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.sell-btn:hover{
+
+    background:#00995c;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 15px rgba(0,195,122,.45);
+
+}
+
+/* Back Button */
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#6c757d;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#00c37a;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 15px rgba(0,195,122,.45);
+
+}
+
+/* Empty Table */
+
+.text-center{
+    color:#cccccc;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+}
+
+h2{
+    font-size:30px;
+}
+
+.table th,
+.table td{
+    padding:12px;
+    font-size:14px;
+}
+
+.sell-btn,
+.back-btn{
+    padding:10px 18px;
+    font-size:14px;
+}
+
+}

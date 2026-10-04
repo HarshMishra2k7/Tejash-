@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TradeSphere Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="static/dashboard.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+
+    <div class="sidebar">
+
+        <h2 class="logo">
+            TradeSphere
+        </h2>
+
+        <a href="dashboard.html">
+            <i class="bi bi-grid-fill"></i>
+            Dashboard
+        </a>
+
+        <a href="portfolio.html">
+            <i class="bi bi-briefcase-fill"></i>
+            Portfolio
+        </a>
+
+        <a href="buy.html">
+            <i class="bi bi-cart-plus-fill"></i>
+            Buy Stocks
+        </a>
+
+        <a href="sell.html">
+            <i class="bi bi-cash-stack"></i>
+            Sell Stocks
+        </a>
+
+        <a href="history.html">
+            <i class="bi bi-clock-history"></i>
+            History
+        </a>
+
+        <a href="profile.html">
+            <i class="bi bi-person-circle"></i>
+            Profile
+        </a>
+
+        <a href="add_money.html">
+            <i class="bi bi-wallet2"></i>
+            Add Money
+        </a>
+
+        <a href="withdraw.html">
+            <i class="bi bi-cash-coin"></i>
+            Withdraw
+        </a>
+
+        <a href="wallet_history.html">
+            <i class="bi bi-clock-history"></i>
+            Wallet History
+        </a>
+
+        <a href="index.html">
+            <i class="bi bi-box-arrow-right"></i>
+            Logout
+        </a>
+
+    </div>
+
+    <!-- ================= Main Content ================= -->
+
+    <div class="main">
+
+        <!-- ================= Top Bar ================= -->
+
+        <div class="topbar d-flex justify-content-between align-items-center">
+
+            <div>
+
+                <h2>
+                    Welcome Tejas
+                </h2>
+
+                <p>
+                    Paper Trading Dashboard
+                </p>
+
+                <div class="mt-2">
+
+                    <span class="badge bg-success fs-6">
+
+                        🟢 Market Open
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ================= Dashboard Cards ================= -->
+
+<div class="row mt-4">
+
+    <!-- Total Balance -->
+
+    <div class="col-md-3">
+
+        <div class="card-box">
+
+            <h6>Total Balance</h6>
+
+            <h3>₹959660.0</h3>
+
+        </div>
+
+    </div>
+
+    <!-- Portfolio -->
+
+    <div class="col-md-3">
+
+        <div class="card-box">
+
+            <h6>Portfolio Value</h6>
+
+            <h3>₹40340.0</h3>
+
+        </div>
+
+    </div>
+
+    <!-- Today's Profit -->
+
+    <div class="col-md-3">
+
+        <div class="card-box">
+
+            <h6>Today's Profit</h6>
+
+            
+
+            <h3 class="text-success">
+
+                ₹40340.0
+
+            </h3>
+
+            
+
+        </div>
+
+    </div>
+
+    <!-- Holdings -->
+
+    <div class="col-md-3">
+
+        <div class="card-box">
+
+            <h6>Holdings</h6>
+
+            <h3>[Obj(id=1, company_name=&#39;Reliance Industries&#39;, symbol=&#39;RELIANCE&#39;, quantity=10, buy_price=2850.0), Obj(id=2, company_name=&#39;Infosys&#39;, symbol=&#39;INFY&#39;, quantity=8, buy_price=1480.0)]</h3>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Top Gainers + Market Index ================= -->
+
+<div class="row mt-4">
+
+    <!-- Top Gainers -->
+
+    <div class="col-md-6">
+
+        <div class="card-box">
+
+            <h4>🔥 Top Gainers</h4>
+
+            <table class="table table-dark table-hover">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Change</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>TCS</td>
+                        <td>₹3500</td>
+                        <td class="text-success">+2.40%</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Infosys</td>
+                        <td>₹1680</td>
+                        <td class="text-success">+1.80%</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Reliance</td>
+                        <td>₹2900</td>
+                        <td class="text-success">+1.50%</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    
+
+    <!-- Market Index -->
+
+    <div class="col-md-6">
+
+        <div class="card-box">
+
+            <h4>📊 Live Market Index</h4>
+
+            <hr>
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+
+                    <h5>📈 NIFTY 50</h5>
+
+                    <h3>25180.35</h3>
+
+                </div>
+
+                <div>
+
+                    
+
+                    <span class="badge bg-success">
+
+                        ▲ 0.72%
+
+                    </span>
+
+                    
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+
+                    <h5>📉 SENSEX</h5>
+
+                    <h3>82345.6</h3>
+
+                </div>
+
+                <div>
+
+                    
+
+                    <span class="badge bg-success">
+
+                        ▲ 0.58%
+
+                    </span>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= Portfolio Chart + Quick Actions ================= -->
+
+<div class="row mt-4">
+
+    <!-- Portfolio Chart -->
+
+    <div class="col-md-8">
+
+        <div class="card-box">
+
+            <h4>📈 Portfolio Performance</h4>
+
+            <hr>
+
+            <canvas id="portfolioChart" height="120"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+
+    <div class="col-md-4">
+
+        <div class="card-box">
+
+            <h4>⚡ Quick Actions</h4>
+
+            <hr>
+
+            <div class="d-grid gap-2">
+
+                <a href="buy.html" class="btn btn-success">
+                    <i class="bi bi-cart-plus-fill"></i>
+                    Buy Stocks
+                </a>
+
+                <a href="sell.html" class="btn btn-danger">
+                    <i class="bi bi-cash-stack"></i>
+                    Sell Stocks
+                </a>
+
+                <a href="portfolio.html" class="btn btn-primary">
+                    <i class="bi bi-briefcase-fill"></i>
+                    Portfolio
+                </a>
+
+                <a href="wallet_history.html" class="btn btn-warning">
+                    <i class="bi bi-wallet2"></i>
+                    Wallet History
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="card-box mt-4">
+
+    <h4>📰 Market News</h4>
+
+    <hr>
+
+    <p>📈 Tata Motors rises 3%</p>
+
+    <p>📊 Infosys Q1 Results Beat Estimates</p>
+
+    <p>🚀 NIFTY hits new high</p>
+
+    <p>💰 Reliance announces expansion plans</p>
+
+</div>
+
+<!-- ================= Scripts ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+const ctx = document.getElementById('portfolioChart');
+
+new Chart(ctx, {
+
+    type: 'line',
+
+    data: {
+
+        labels: ['Mon','Tue','Wed','Thu','Fri'],
+
+        datasets: [{
+
+            label: 'Portfolio Value',
+
+            data: [1000000,1012000,1008000,1025000,1034000],
+
+            borderColor: '#00ff88',
+
+            borderWidth: 3,
+
+            fill: false,
+
+            tension: 0.4
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        plugins: {
+
+            legend: {
+
+                labels: {
+
+                    color: "white"
+
+                }
+
+            }
+
+        },
+
+        scales: {
+
+            x: {
+
+                ticks: {
+
+                    color: "white"
+
+                }
+
+            },
+
+            y: {
+
+                ticks: {
+
+                    color: "white"
+
+                }
+
+            }
+
+        }
+
+    }
+
+});
+
+// Auto Refresh Every 30 Seconds
+
+
+
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>

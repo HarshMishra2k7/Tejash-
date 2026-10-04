@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Edit Stock</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="static/dashboard.css">
+
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+
+    <h2>✏ Edit Stock</h2>
+
+    <div class="form-box">
+
+        <form method="POST" action="#" onsubmit="return TradeSphereDemo.handleForm(event);">
+
+            <input
+            type="text"
+            name="symbol"
+            class="form-control"
+            value="RELIANCE"
+            required>
+
+            <input
+            type="text"
+            name="company_name"
+            class="form-control"
+            value="Reliance Industries"
+            required>
+
+            <input
+            type="number"
+            step="0.01"
+            name="price"
+            class="form-control"
+            value="2945.5"
+            required>
+
+            <button class="add-btn">
+                💾 Update Stock
+            </button>
+
+            <a href="admin_stocks.html" class="back-btn">
+                ⬅ Back
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
